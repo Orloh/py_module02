@@ -90,7 +90,6 @@ class GardenManager:
 
 def test_garden_management() -> None:
     """Runs the full garden management lifecycle with custom errors."""
-    print("=== Advanced Garden Management System ===")
     manager = GardenManager()
 
     print("\n--- Adding Plants ---")
@@ -114,4 +113,5 @@ def test_garden_management() -> None:
 
 
 if __name__ == "__main__":
+    print("=== Advanced Garden Management System ===")
     test_garden_management()

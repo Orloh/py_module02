@@ -10,7 +10,7 @@
 #                                                                             #
 # *************************************************************************** #
 
-def check_temperature(temp_str) -> int | None:
+def check_temperature(temp_str: str) -> int | None:
     """
     Validates temperature string for agricultural use.
     Returns the temperature as a integer if valid, otherwise prints an error.
@@ -33,8 +33,6 @@ def check_temperature(temp_str) -> int | None:
 
 def test_temperature_input():
     """Demo: validation pipeline with various inputs."""
-    print("=== Garden Temperature Checker ===\n")
-
     test_cases = ["25", "abc", "100", "-50"]
 
     for test in test_cases:
@@ -47,4 +45,5 @@ def test_temperature_input():
 
 
 if __name__ == "__main__":
+    print("=== Garden Temperature Checker ===\n")
     test_temperature_input()

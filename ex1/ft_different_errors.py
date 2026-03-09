@@ -31,8 +31,6 @@ def garden_operations(action: str) -> None:
 
 def test_error_types() -> None:
     """Test and safely catch different types of errors."""
-    print("=== Garden Error Types Demo ===")
-
     test_cases = {
         "value": "ValueError",
         "zero": "ZeroDivisionError",
@@ -64,4 +62,5 @@ def test_error_types() -> None:
 
 
 if __name__ == "__main__":
+    print("=== Garden Error Types Demo ===")
     test_error_types()
