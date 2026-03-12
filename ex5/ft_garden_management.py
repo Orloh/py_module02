@@ -10,18 +10,22 @@
 #                                                                             #
 # *************************************************************************** #
 
+
 class GardenError(Exception):
     """Base exception for all garden errors."""
+
     pass
 
 
 class PlantError(GardenError):
     """Exception for problems with specific plants."""
+
     pass
 
 
 class WaterError(GardenError):
     """Exception for problems with the watering system."""
+
     pass
 
 
@@ -34,14 +38,14 @@ class GardenManager:
     def add_plant(
             self,
             name: str,
-            water_level: int,
-            sunlight_hours: int
+            water_lvl: int,
+            sunlight_hrs: int
     ) -> None:
         """Adds a plant to the garden, validating the name."""
         try:
             if not name:
                 raise PlantError("Plant name cannot be empty!")
-            self.plants[name] = {"water": water_level, "sunlight": sunlight_hours}
+            self.plants[name] = {"water": water_lvl, "sunlight": sunlight_hrs}
             print(f"Added {name} to the garden.")
         except PlantError as e:
             print(f"Error adding plant: {e}")

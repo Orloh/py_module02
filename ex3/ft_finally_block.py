@@ -10,7 +10,7 @@
 #                                                                             #
 # *************************************************************************** #
 
-def water_plants(plant_list: list[str]) -> None:
+def water_plants(plant_list: list[str | None]) -> None:
     """Water a list of plants, ensuring the system is always closed."""
     print("Opening watering system")
     try:
@@ -28,7 +28,7 @@ def water_plants(plant_list: list[str]) -> None:
 
 def test_watering_system() -> None:
     """Demonstrates normal operations and error recovery using finally."""
-    plants = ["tomato", "lettuce", "carrots"]
+    plants: list[str | None] = ["tomato", "lettuce", "carrots"]
     print("\nTesting normal watering...")
     water_plants(plants)
     plants = ["tomato", None, "lettuce", "carrots"]

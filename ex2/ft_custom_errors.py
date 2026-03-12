@@ -63,6 +63,7 @@ def test_custom_errors() -> None:
 
     print("\nAll custom error types work correctly!")
 
+
 if __name__ == "__main__":
     print("=== Custom Garden Errors Demo ===")
     test_custom_errors()
